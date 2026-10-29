@@ -1,0 +1,115 @@
+AD SET: OB_US_ABO_Wins
+AD NAME: OB_W1_mj-trophy
+IMAGE TEXT: when the parlay i put $5 at +13100 finally hits
+PRIMARY TEXT:
+it finally hit. $5 at +13100 = $655.
+same parlay at another book: +9800 = $490.
+check which book pays the most before you tap place.
+
+21+ only. Gambling problem? Call 1-800-GAMBLER.
+HEADLINE: Same parlay. $165 more.
+CALL TO ACTION: Learn More
+----------------------------------------
+AD SET: OB_US_ABO_Wins
+AD NAME: OB_W2_kg-anything-is-possible
+IMAGE TEXT: when the 6-leg i put $10 on at +25000 actually hits
+PRIMARY TEXT:
+6 legs. all hit. anything is possible.
+$10 at +25000 = $2,500. at +21000 it's $2,100.
+see every book's price before you place it.
+
+21+ only. Gambling problem? Call 1-800-GAMBLER.
+HEADLINE: Same parlay. $400 more.
+CALL TO ACTION: Learn More
+----------------------------------------
+AD SET: OB_US_ABO_Wins
+AD NAME: OB_W3_leo-toast
+IMAGE TEXT: when my $4 at +50000 hits and the group chat finally stops laughing
+PRIMARY TEXT:
+$4 at +50000 = $2,000.
+same parlay at another book: +40000 = $1,600.
+check which book pays the most before you tap place.
+
+21+ only. Gambling problem? Call 1-800-GAMBLER.
+HEADLINE: Same parlay. $400 more.
+CALL TO ACTION: Learn More
+----------------------------------------
+AD SET: OB_US_ABO_Wins
+AD NAME: OB_W4_step-brothers
+IMAGE TEXT: when the guy next to me has the same $5 at +30000 parlay
+PRIMARY TEXT:
+same legs. same $5. best friends now.
+does his book pay more than yours? Parlay Builder shows which pays most.
+
+21+ only. Gambling problem? Call 1-800-GAMBLER.
+HEADLINE: Same parlay. Bigger payout.
+CALL TO ACTION: Learn More
+----------------------------------------
+AD SET: OB_US_ABO_Wins
+AD NAME: OB_W5_oprah
+IMAGE TEXT: when my $5 at +20000 hits mid-meeting and i forget i’m unmuted
+PRIMARY TEXT:
+the whole team heard it. worth it: $1,000.
+make the next one pay even more. Parlay Builder finds the best price for your parlay.
+
+21+ only. Gambling problem? Call 1-800-GAMBLER.
+HEADLINE: Same parlay. More money.
+CALL TO ACTION: Learn More
+----------------------------------------
+AD SET: OB_US_ABO_Losses
+AD NAME: OB_L1_crying-jordan
+IMAGE TEXT: when the 9-leg i put $3 on at +40000 dies by one rebound
+PRIMARY TEXT:
+lost by one rebound. we've all been there.
+apps take a cut on every leg, so 9 legs means 9 cuts.
+see what your parlay is really worth before you place it.
+
+21+ only. Gambling problem? Call 1-800-GAMBLER.
+HEADLINE: Next time, get full price.
+CALL TO ACTION: Learn More
+----------------------------------------
+AD SET: OB_US_ABO_Losses
+AD NAME: OB_L2_michael-scott
+IMAGE TEXT: when my $5 at +18000 needs one yard and they take a knee
+PRIMARY TEXT:
+one yard. they kneel. we've all been there.
+apps take a cut on every leg, win or lose.
+see what your parlay is really worth before you place it.
+
+21+ only. Gambling problem? Call 1-800-GAMBLER.
+HEADLINE: Check my parlay
+CALL TO ACTION: Learn More
+----------------------------------------
+AD SET: OB_US_ABO_Losses
+AD NAME: OB_L3_jordan-peele
+IMAGE TEXT: when my $1 at +100000 is one leg away and my phone’s at 2%
+PRIMARY TEXT:
+one leg away. 2% battery.
+at least know it pays full price: $1 at +100000 = $1,000. at +80000 it's $800.
+
+21+ only. Gambling problem? Call 1-800-GAMBLER.
+HEADLINE: Same parlay. $200 more.
+CALL TO ACTION: Learn More
+----------------------------------------
+AD SET: OB_US_ABO_Losses
+AD NAME: OB_L4_walter-white
+IMAGE TEXT: when i build the $5 at +40000, don’t place it, and every leg hits
+PRIMARY TEXT:
+built it. didn’t place it. every leg hit.
+next time, build it in Parlay Builder and see which book pays most before you tap.
+
+21+ only. Gambling problem? Call 1-800-GAMBLER.
+HEADLINE: Build it. Then get the best price.
+CALL TO ACTION: Learn More
+----------------------------------------
+AD SET: OB_US_ABO_Losses
+AD NAME: OB_L5_ben-affleck
+IMAGE TEXT: when my $5 at +8000 hits and the other app had it at +11000
+PRIMARY TEXT:
+same parlay. different app. $150 different.
+Parlay Builder shows which book pays most before you tap place bet.
+
+21+ only. Gambling problem? Call 1-800-GAMBLER.
+HEADLINE: Same parlay. $150 more.
+CALL TO ACTION: Learn More
+----------------------------------------
