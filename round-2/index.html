@@ -39,13 +39,13 @@ button.done{background:var(--accent);color:#fff;border-color:var(--accent)}
 <p class="lead">Round 1's meme ads got 7 to 9% click rates, but they ran with no pixel and were optimised for landing page views. Round 2 runs the two winners again plus 6 new versions of them, optimised for people who <b>start checkout</b>. Every ad uses the same text as Round 1, so the image is the only thing being tested.</p>
 <a class="btn" href="oddsboss-round-2-ads.zip" download>Download all Round 2 ads (.zip)</a>
 
-<div class="box warn"><h3>Don't launch until the owner says go</h3><p style="margin:0">The owner is putting a pixel fix live first. When they say go, do the pixel check below before anything else.</p></div>
+<div class="box warn"><h3>Ready to launch</h3><p style="margin:0">The pixel is live. Set up the campaign below and launch. After the first full day, do the pixel check in Step 1.</p></div>
 
-<div class="box"><h3>Step 1 · Pixel check (10 minutes)</h3><ol>
-<li>Events Manager → <b>PV1 Ads Meta Pixel</b> (ID <code>4567744503371725</code>) → <b>Test events</b>.</li>
-<li>On your phone, send yourself <code>https://getoddsboss.com/?utm_source=meta&amp;utm_medium=paid_social&amp;utm_campaign=ob_us_nov26_memes&amp;utm_content=test</code> in an Instagram DM and tap it, so it opens in Instagram's own browser.</li>
-<li>Tap <b>Get today's picks</b>. Within a minute, Test events should show <b>PageView</b> and <b>InitiateCheckout</b>.</li>
-<li>Do the same from the Facebook app. Screenshot both results and send them to the owner. If either event is missing, stop and tell the owner.</li>
+<div class="box"><h3>Step 1 · Pixel check (after day 1)</h3><ol>
+<li>Events Manager → <b>PV1 Ads Meta Pixel</b> (ID <code>4567744503371725</code>) → <b>Overview</b>.</li>
+<li>Check that <b>PageView</b> and <b>InitiateCheckout</b> both show events from the last 24 hours.</li>
+<li>In Ads Manager, check that the <b>Results</b> column shows checkout starts (not dashes) for the ad set.</li>
+<li>Screenshot both and send them to the owner. If InitiateCheckout shows 0 while the ads got clicks, pause and tell the owner.</li>
 </ol></div>
 
 <div class="box"><h3>Step 2 · Campaign and ad set</h3><ol>
