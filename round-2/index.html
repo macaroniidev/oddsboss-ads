@@ -36,7 +36,7 @@ button.done{background:var(--accent);color:#fff;border-color:var(--accent)}
 </style></head><body><div class="wrap">
 <p class="sub"><a href="../" style="color:var(--accent);font-weight:600">← Round 1 ads</a></p>
 <h1>OddsBoss: Round 2 campaign setup</h1>
-<p class="lead">How to set up the new campaign: two ad sets with the same 8 ads, optimised for checkout starts. Both target men. The only difference between the ad sets is the audience type. Meta's A/B test splits people between them, so the audiences don't overlap. Every ad uses the same text.</p>
+<p class="lead">How to set up the new campaign: two ad sets with the same 8 ads and the same audience (men in the US, 21+), optimised for checkout starts. The only difference is where the ads show: one ad set on Facebook only, one on Instagram only. Meta's A/B test splits people between them, so the audiences don't overlap. Every ad uses the same text.</p>
 <a class="btn" href="oddsboss-round-2-ads.zip" download>Download the 8 ads (.zip)</a>
 
 <div class="box"><h3>1 · Campaign</h3><ol>
@@ -44,27 +44,27 @@ button.done{background:var(--accent);color:#fff;border-color:var(--accent)}
 <li>Advantage campaign budget <b>OFF</b> (each ad set gets its own budget). Special ad categories: none.</li>
 </ol></div>
 
-<div class="box"><h3>2 · Ad set A: Advantage+ audience</h3><ol>
-<li>Name <code>OB_US_R2_AdvPlus</code>. Budget <b>$45 per day</b>. Bid strategy <b>Highest volume</b>.</li>
+<div class="box"><h3>2 · Ad set A: Facebook</h3><ol>
+<li>Name <code>OB_US_R2_Facebook</code>. Budget <b>$45 per day</b>. Bid strategy <b>Highest volume</b>.</li>
 <li>Conversion location <b>Website</b>, pixel <b>PV1 Ads Meta Pixel</b>, conversion event <b>Initiate checkout</b>. Attribution <b>7-day click or 1-day view</b>.</li>
-<li>Audience: <b>Advantage+ audience ON</b>. Audience controls: location <b>United States</b>, <b>minimum age 21</b>. Audience suggestions: gender <b>Men</b>, nothing else.</li>
-<li>Placements: <b>Advantage+ placements</b>.</li>
+<li>Audience: click <b>Switch to original audience options</b>. Location <b>United States</b> (people living in or recently in). Age <b>21</b> to <b>65+</b>. Gender <b>Men</b>. Detailed targeting empty, and if an <b>Advantage detailed targeting</b> box shows, untick it.</li>
+<li>Placements: <b>Manual placements</b>. Platforms: <b>Facebook only</b> (untick Instagram, Audience Network, Messenger and Threads). Facebook placements: keep <b>Feed</b>, <b>Stories</b> and <b>Reels</b>, untick everything else.</li>
 <li>Schedule: leave the default, so it starts as soon as it's published.</li>
-<li>Add the 8 ads (step 4), using the <b>ad set A</b> names and URL parameters. Publish, then do step 3 straight away.</li>
+<li>Add the 8 ads (step 4), using the <b>Facebook ad set</b> names and URL parameters. Publish, then do step 3 straight away.</li>
 </ol></div>
 
-<div class="box"><h3>3 · Ad set B and the A/B test</h3><ol>
-<li>In Ads Manager, tick ad set A and click <b>A/B test</b>. Choose to <b>duplicate the ad set</b>, and pick <b>Audience</b> as the variable.</li>
-<li>In the copy: name <code>OB_US_R2_Original</code>. Budget <b>$45 per day</b>. Leave every other ad set setting exactly as in A.</li>
-<li>Audience: click <b>Switch to original audience options</b>. Location <b>United States</b> (people living in or recently in). Age <b>21</b> to <b>65+</b>. Gender <b>Men</b>. Detailed targeting empty, and if an <b>Advantage detailed targeting</b> box shows, untick it.</li>
-<li>Rename the 8 copied ads to the <b>ad set B</b> names and paste the <b>ad set B</b> URL parameters (they end in <code>utm_term=original</code>).</li>
+<div class="box"><h3>3 · Ad set B: Instagram, and the A/B test</h3><ol>
+<li>In Ads Manager, tick ad set A and click <b>A/B test</b>. Choose to <b>duplicate the ad set</b>, and pick <b>Placements</b> as the variable.</li>
+<li>In the copy: name <code>OB_US_R2_Instagram</code>. Budget <b>$45 per day</b>. Keep the audience exactly as in A (US, 21 to 65+, men).</li>
+<li>Placements: <b>Manual placements</b>. Platforms: <b>Instagram only</b> (untick Facebook, Audience Network, Messenger and Threads). Instagram placements: keep <b>Feed</b>, <b>Stories</b>, <b>Reels</b> and <b>Explore</b>, untick everything else.</li>
+<li>Rename the 8 copied ads to the <b>Instagram ad set</b> names and paste the <b>Instagram ad set</b> URL parameters (they end in <code>utm_term=instagram</code>).</li>
 <li>Test settings: key metric <b>Cost per result (Initiate checkout)</b>. Start <b>now</b>, end date <b>14 days</b> from today. If there's an option to end the test early when a winner is found, turn it <b>off</b>.</li>
 <li>Publish the test. Don't edit either ad set while the test runs: edits restart it.</li>
 </ol></div>
 
 <div class="box copybox"><h3>4 · Ads (the same text on all 8, in both ad sets)</h3><ol>
 <li>Format <b>Single image</b>. Upload the <b>feed 4:5</b> file, then "Edit placements" to put the <b>stories 9:16</b> file on Stories and Reels.</li>
-<li>Paste this text on every ad. Each ad's name and URL parameters are in the list below, one set for ad set A and one for ad set B.</li>
+<li>Paste this text on every ad. Each ad's name and URL parameters are in the list below, one set for the Facebook ad set and one for the Instagram ad set.</li>
 <li>Advantage+ creative / creative enhancements: <b>every option OFF</b>. Music OFF. Multi-advertiser ads OFF.</li>
 </ol>
 <div class="field"><span>Primary text</span><pre>Stop throwing money at random parlays. OddsBoss researches, analyzes and gives you everything you need in seconds.</pre><button data-copy="Stop throwing money at random parlays. OddsBoss researches, analyzes and gives you everything you need in seconds.">Copy</button></div>
@@ -81,10 +81,10 @@ button.done{background:var(--accent);color:#fff;border-color:var(--accent)}
   </div>
   <div class="meta">
     <p class="num">Ad 1 · Crying Jordan: dies by one rebound (Round 1)</p>
-    <div class="field"><span>Ad set A: ad name</span><code>OB_L1_crying-jordan_control_A</code><button data-copy="OB_L1_crying-jordan_control_A">Copy</button></div>
-    <div class="field"><span>Ad set A: URL parameters</span><code>utm_source=meta&amp;utm_medium=paid_social&amp;utm_campaign=ob_us_nov26_memes&amp;utm_content=ob_l1_crying_jordan_control_a&amp;utm_term=advplus</code><button data-copy="utm_source=meta&amp;utm_medium=paid_social&amp;utm_campaign=ob_us_nov26_memes&amp;utm_content=ob_l1_crying_jordan_control_a&amp;utm_term=advplus">Copy</button></div>
-    <div class="field"><span>Ad set B: ad name</span><code>OB_L1_crying-jordan_control_B</code><button data-copy="OB_L1_crying-jordan_control_B">Copy</button></div>
-    <div class="field"><span>Ad set B: URL parameters</span><code>utm_source=meta&amp;utm_medium=paid_social&amp;utm_campaign=ob_us_nov26_memes&amp;utm_content=ob_l1_crying_jordan_control_b&amp;utm_term=original</code><button data-copy="utm_source=meta&amp;utm_medium=paid_social&amp;utm_campaign=ob_us_nov26_memes&amp;utm_content=ob_l1_crying_jordan_control_b&amp;utm_term=original">Copy</button></div>
+    <div class="field"><span>Facebook ad set: ad name</span><code>OB_L1_crying-jordan_control_FB</code><button data-copy="OB_L1_crying-jordan_control_FB">Copy</button></div>
+    <div class="field"><span>Facebook ad set: URL parameters</span><code>utm_source=meta&amp;utm_medium=paid_social&amp;utm_campaign=ob_us_nov26_memes&amp;utm_content=ob_l1_crying_jordan_control_fb&amp;utm_term=facebook</code><button data-copy="utm_source=meta&amp;utm_medium=paid_social&amp;utm_campaign=ob_us_nov26_memes&amp;utm_content=ob_l1_crying_jordan_control_fb&amp;utm_term=facebook">Copy</button></div>
+    <div class="field"><span>Instagram ad set: ad name</span><code>OB_L1_crying-jordan_control_IG</code><button data-copy="OB_L1_crying-jordan_control_IG">Copy</button></div>
+    <div class="field"><span>Instagram ad set: URL parameters</span><code>utm_source=meta&amp;utm_medium=paid_social&amp;utm_campaign=ob_us_nov26_memes&amp;utm_content=ob_l1_crying_jordan_control_ig&amp;utm_term=instagram</code><button data-copy="utm_source=meta&amp;utm_medium=paid_social&amp;utm_campaign=ob_us_nov26_memes&amp;utm_content=ob_l1_crying_jordan_control_ig&amp;utm_term=instagram">Copy</button></div>
   </div>
 </article>
 <article class="ad">
@@ -94,10 +94,10 @@ button.done{background:var(--accent);color:#fff;border-color:var(--accent)}
   </div>
   <div class="meta">
     <p class="num">Ad 2 · Jordan Peele: one leg away, phone at 2% (Round 1)</p>
-    <div class="field"><span>Ad set A: ad name</span><code>OB_L3_jordan-peele_control_A</code><button data-copy="OB_L3_jordan-peele_control_A">Copy</button></div>
-    <div class="field"><span>Ad set A: URL parameters</span><code>utm_source=meta&amp;utm_medium=paid_social&amp;utm_campaign=ob_us_nov26_memes&amp;utm_content=ob_l3_jordan_peele_control_a&amp;utm_term=advplus</code><button data-copy="utm_source=meta&amp;utm_medium=paid_social&amp;utm_campaign=ob_us_nov26_memes&amp;utm_content=ob_l3_jordan_peele_control_a&amp;utm_term=advplus">Copy</button></div>
-    <div class="field"><span>Ad set B: ad name</span><code>OB_L3_jordan-peele_control_B</code><button data-copy="OB_L3_jordan-peele_control_B">Copy</button></div>
-    <div class="field"><span>Ad set B: URL parameters</span><code>utm_source=meta&amp;utm_medium=paid_social&amp;utm_campaign=ob_us_nov26_memes&amp;utm_content=ob_l3_jordan_peele_control_b&amp;utm_term=original</code><button data-copy="utm_source=meta&amp;utm_medium=paid_social&amp;utm_campaign=ob_us_nov26_memes&amp;utm_content=ob_l3_jordan_peele_control_b&amp;utm_term=original">Copy</button></div>
+    <div class="field"><span>Facebook ad set: ad name</span><code>OB_L3_jordan-peele_control_FB</code><button data-copy="OB_L3_jordan-peele_control_FB">Copy</button></div>
+    <div class="field"><span>Facebook ad set: URL parameters</span><code>utm_source=meta&amp;utm_medium=paid_social&amp;utm_campaign=ob_us_nov26_memes&amp;utm_content=ob_l3_jordan_peele_control_fb&amp;utm_term=facebook</code><button data-copy="utm_source=meta&amp;utm_medium=paid_social&amp;utm_campaign=ob_us_nov26_memes&amp;utm_content=ob_l3_jordan_peele_control_fb&amp;utm_term=facebook">Copy</button></div>
+    <div class="field"><span>Instagram ad set: ad name</span><code>OB_L3_jordan-peele_control_IG</code><button data-copy="OB_L3_jordan-peele_control_IG">Copy</button></div>
+    <div class="field"><span>Instagram ad set: URL parameters</span><code>utm_source=meta&amp;utm_medium=paid_social&amp;utm_campaign=ob_us_nov26_memes&amp;utm_content=ob_l3_jordan_peele_control_ig&amp;utm_term=instagram</code><button data-copy="utm_source=meta&amp;utm_medium=paid_social&amp;utm_campaign=ob_us_nov26_memes&amp;utm_content=ob_l3_jordan_peele_control_ig&amp;utm_term=instagram">Copy</button></div>
   </div>
 </article>
 <article class="ad">
@@ -107,10 +107,10 @@ button.done{background:var(--accent);color:#fff;border-color:var(--accent)}
   </div>
   <div class="meta">
     <p class="num">Ad 3 · when the 6-leg i put $5 on at +28000 dies by half a point</p>
-    <div class="field"><span>Ad set A: ad name</span><code>OB_L1v2_crying-jordan_half-point_A</code><button data-copy="OB_L1v2_crying-jordan_half-point_A">Copy</button></div>
-    <div class="field"><span>Ad set A: URL parameters</span><code>utm_source=meta&amp;utm_medium=paid_social&amp;utm_campaign=ob_us_nov26_memes&amp;utm_content=ob_l1v2_crying_jordan_half_point_a&amp;utm_term=advplus</code><button data-copy="utm_source=meta&amp;utm_medium=paid_social&amp;utm_campaign=ob_us_nov26_memes&amp;utm_content=ob_l1v2_crying_jordan_half_point_a&amp;utm_term=advplus">Copy</button></div>
-    <div class="field"><span>Ad set B: ad name</span><code>OB_L1v2_crying-jordan_half-point_B</code><button data-copy="OB_L1v2_crying-jordan_half-point_B">Copy</button></div>
-    <div class="field"><span>Ad set B: URL parameters</span><code>utm_source=meta&amp;utm_medium=paid_social&amp;utm_campaign=ob_us_nov26_memes&amp;utm_content=ob_l1v2_crying_jordan_half_point_b&amp;utm_term=original</code><button data-copy="utm_source=meta&amp;utm_medium=paid_social&amp;utm_campaign=ob_us_nov26_memes&amp;utm_content=ob_l1v2_crying_jordan_half_point_b&amp;utm_term=original">Copy</button></div>
+    <div class="field"><span>Facebook ad set: ad name</span><code>OB_L1v2_crying-jordan_half-point_FB</code><button data-copy="OB_L1v2_crying-jordan_half-point_FB">Copy</button></div>
+    <div class="field"><span>Facebook ad set: URL parameters</span><code>utm_source=meta&amp;utm_medium=paid_social&amp;utm_campaign=ob_us_nov26_memes&amp;utm_content=ob_l1v2_crying_jordan_half_point_fb&amp;utm_term=facebook</code><button data-copy="utm_source=meta&amp;utm_medium=paid_social&amp;utm_campaign=ob_us_nov26_memes&amp;utm_content=ob_l1v2_crying_jordan_half_point_fb&amp;utm_term=facebook">Copy</button></div>
+    <div class="field"><span>Instagram ad set: ad name</span><code>OB_L1v2_crying-jordan_half-point_IG</code><button data-copy="OB_L1v2_crying-jordan_half-point_IG">Copy</button></div>
+    <div class="field"><span>Instagram ad set: URL parameters</span><code>utm_source=meta&amp;utm_medium=paid_social&amp;utm_campaign=ob_us_nov26_memes&amp;utm_content=ob_l1v2_crying_jordan_half_point_ig&amp;utm_term=instagram</code><button data-copy="utm_source=meta&amp;utm_medium=paid_social&amp;utm_campaign=ob_us_nov26_memes&amp;utm_content=ob_l1v2_crying_jordan_half_point_ig&amp;utm_term=instagram">Copy</button></div>
   </div>
 </article>
 <article class="ad">
@@ -120,10 +120,10 @@ button.done{background:var(--accent);color:#fff;border-color:var(--accent)}
   </div>
   <div class="meta">
     <p class="num">Ad 4 · when my $10 at +15000 dies because he sat the whole 4th quarter</p>
-    <div class="field"><span>Ad set A: ad name</span><code>OB_L1v4_crying-jordan_sat-the-4th_A</code><button data-copy="OB_L1v4_crying-jordan_sat-the-4th_A">Copy</button></div>
-    <div class="field"><span>Ad set A: URL parameters</span><code>utm_source=meta&amp;utm_medium=paid_social&amp;utm_campaign=ob_us_nov26_memes&amp;utm_content=ob_l1v4_crying_jordan_sat_the_4th_a&amp;utm_term=advplus</code><button data-copy="utm_source=meta&amp;utm_medium=paid_social&amp;utm_campaign=ob_us_nov26_memes&amp;utm_content=ob_l1v4_crying_jordan_sat_the_4th_a&amp;utm_term=advplus">Copy</button></div>
-    <div class="field"><span>Ad set B: ad name</span><code>OB_L1v4_crying-jordan_sat-the-4th_B</code><button data-copy="OB_L1v4_crying-jordan_sat-the-4th_B">Copy</button></div>
-    <div class="field"><span>Ad set B: URL parameters</span><code>utm_source=meta&amp;utm_medium=paid_social&amp;utm_campaign=ob_us_nov26_memes&amp;utm_content=ob_l1v4_crying_jordan_sat_the_4th_b&amp;utm_term=original</code><button data-copy="utm_source=meta&amp;utm_medium=paid_social&amp;utm_campaign=ob_us_nov26_memes&amp;utm_content=ob_l1v4_crying_jordan_sat_the_4th_b&amp;utm_term=original">Copy</button></div>
+    <div class="field"><span>Facebook ad set: ad name</span><code>OB_L1v4_crying-jordan_sat-the-4th_FB</code><button data-copy="OB_L1v4_crying-jordan_sat-the-4th_FB">Copy</button></div>
+    <div class="field"><span>Facebook ad set: URL parameters</span><code>utm_source=meta&amp;utm_medium=paid_social&amp;utm_campaign=ob_us_nov26_memes&amp;utm_content=ob_l1v4_crying_jordan_sat_the_4th_fb&amp;utm_term=facebook</code><button data-copy="utm_source=meta&amp;utm_medium=paid_social&amp;utm_campaign=ob_us_nov26_memes&amp;utm_content=ob_l1v4_crying_jordan_sat_the_4th_fb&amp;utm_term=facebook">Copy</button></div>
+    <div class="field"><span>Instagram ad set: ad name</span><code>OB_L1v4_crying-jordan_sat-the-4th_IG</code><button data-copy="OB_L1v4_crying-jordan_sat-the-4th_IG">Copy</button></div>
+    <div class="field"><span>Instagram ad set: URL parameters</span><code>utm_source=meta&amp;utm_medium=paid_social&amp;utm_campaign=ob_us_nov26_memes&amp;utm_content=ob_l1v4_crying_jordan_sat_the_4th_ig&amp;utm_term=instagram</code><button data-copy="utm_source=meta&amp;utm_medium=paid_social&amp;utm_campaign=ob_us_nov26_memes&amp;utm_content=ob_l1v4_crying_jordan_sat_the_4th_ig&amp;utm_term=instagram">Copy</button></div>
   </div>
 </article>
 <article class="ad">
@@ -133,10 +133,10 @@ button.done{background:var(--accent);color:#fff;border-color:var(--accent)}
   </div>
   <div class="meta">
     <p class="num">Ad 5 · when my 5-leg hits 4 legs and the 5th is the backup qb</p>
-    <div class="field"><span>Ad set A: ad name</span><code>OB_L1v3_crying-jordan_backup-qb_A</code><button data-copy="OB_L1v3_crying-jordan_backup-qb_A">Copy</button></div>
-    <div class="field"><span>Ad set A: URL parameters</span><code>utm_source=meta&amp;utm_medium=paid_social&amp;utm_campaign=ob_us_nov26_memes&amp;utm_content=ob_l1v3_crying_jordan_backup_qb_a&amp;utm_term=advplus</code><button data-copy="utm_source=meta&amp;utm_medium=paid_social&amp;utm_campaign=ob_us_nov26_memes&amp;utm_content=ob_l1v3_crying_jordan_backup_qb_a&amp;utm_term=advplus">Copy</button></div>
-    <div class="field"><span>Ad set B: ad name</span><code>OB_L1v3_crying-jordan_backup-qb_B</code><button data-copy="OB_L1v3_crying-jordan_backup-qb_B">Copy</button></div>
-    <div class="field"><span>Ad set B: URL parameters</span><code>utm_source=meta&amp;utm_medium=paid_social&amp;utm_campaign=ob_us_nov26_memes&amp;utm_content=ob_l1v3_crying_jordan_backup_qb_b&amp;utm_term=original</code><button data-copy="utm_source=meta&amp;utm_medium=paid_social&amp;utm_campaign=ob_us_nov26_memes&amp;utm_content=ob_l1v3_crying_jordan_backup_qb_b&amp;utm_term=original">Copy</button></div>
+    <div class="field"><span>Facebook ad set: ad name</span><code>OB_L1v3_crying-jordan_backup-qb_FB</code><button data-copy="OB_L1v3_crying-jordan_backup-qb_FB">Copy</button></div>
+    <div class="field"><span>Facebook ad set: URL parameters</span><code>utm_source=meta&amp;utm_medium=paid_social&amp;utm_campaign=ob_us_nov26_memes&amp;utm_content=ob_l1v3_crying_jordan_backup_qb_fb&amp;utm_term=facebook</code><button data-copy="utm_source=meta&amp;utm_medium=paid_social&amp;utm_campaign=ob_us_nov26_memes&amp;utm_content=ob_l1v3_crying_jordan_backup_qb_fb&amp;utm_term=facebook">Copy</button></div>
+    <div class="field"><span>Instagram ad set: ad name</span><code>OB_L1v3_crying-jordan_backup-qb_IG</code><button data-copy="OB_L1v3_crying-jordan_backup-qb_IG">Copy</button></div>
+    <div class="field"><span>Instagram ad set: URL parameters</span><code>utm_source=meta&amp;utm_medium=paid_social&amp;utm_campaign=ob_us_nov26_memes&amp;utm_content=ob_l1v3_crying_jordan_backup_qb_ig&amp;utm_term=instagram</code><button data-copy="utm_source=meta&amp;utm_medium=paid_social&amp;utm_campaign=ob_us_nov26_memes&amp;utm_content=ob_l1v3_crying_jordan_backup_qb_ig&amp;utm_term=instagram">Copy</button></div>
   </div>
 </article>
 <article class="ad">
@@ -146,10 +146,10 @@ button.done{background:var(--accent);color:#fff;border-color:var(--accent)}
   </div>
   <div class="meta">
     <p class="num">Ad 6 · when my $5 at +22000 needs one free throw and he shoots 48%</p>
-    <div class="field"><span>Ad set A: ad name</span><code>OB_L3v2_jordan-peele_free-throw_A</code><button data-copy="OB_L3v2_jordan-peele_free-throw_A">Copy</button></div>
-    <div class="field"><span>Ad set A: URL parameters</span><code>utm_source=meta&amp;utm_medium=paid_social&amp;utm_campaign=ob_us_nov26_memes&amp;utm_content=ob_l3v2_jordan_peele_free_throw_a&amp;utm_term=advplus</code><button data-copy="utm_source=meta&amp;utm_medium=paid_social&amp;utm_campaign=ob_us_nov26_memes&amp;utm_content=ob_l3v2_jordan_peele_free_throw_a&amp;utm_term=advplus">Copy</button></div>
-    <div class="field"><span>Ad set B: ad name</span><code>OB_L3v2_jordan-peele_free-throw_B</code><button data-copy="OB_L3v2_jordan-peele_free-throw_B">Copy</button></div>
-    <div class="field"><span>Ad set B: URL parameters</span><code>utm_source=meta&amp;utm_medium=paid_social&amp;utm_campaign=ob_us_nov26_memes&amp;utm_content=ob_l3v2_jordan_peele_free_throw_b&amp;utm_term=original</code><button data-copy="utm_source=meta&amp;utm_medium=paid_social&amp;utm_campaign=ob_us_nov26_memes&amp;utm_content=ob_l3v2_jordan_peele_free_throw_b&amp;utm_term=original">Copy</button></div>
+    <div class="field"><span>Facebook ad set: ad name</span><code>OB_L3v2_jordan-peele_free-throw_FB</code><button data-copy="OB_L3v2_jordan-peele_free-throw_FB">Copy</button></div>
+    <div class="field"><span>Facebook ad set: URL parameters</span><code>utm_source=meta&amp;utm_medium=paid_social&amp;utm_campaign=ob_us_nov26_memes&amp;utm_content=ob_l3v2_jordan_peele_free_throw_fb&amp;utm_term=facebook</code><button data-copy="utm_source=meta&amp;utm_medium=paid_social&amp;utm_campaign=ob_us_nov26_memes&amp;utm_content=ob_l3v2_jordan_peele_free_throw_fb&amp;utm_term=facebook">Copy</button></div>
+    <div class="field"><span>Instagram ad set: ad name</span><code>OB_L3v2_jordan-peele_free-throw_IG</code><button data-copy="OB_L3v2_jordan-peele_free-throw_IG">Copy</button></div>
+    <div class="field"><span>Instagram ad set: URL parameters</span><code>utm_source=meta&amp;utm_medium=paid_social&amp;utm_campaign=ob_us_nov26_memes&amp;utm_content=ob_l3v2_jordan_peele_free_throw_ig&amp;utm_term=instagram</code><button data-copy="utm_source=meta&amp;utm_medium=paid_social&amp;utm_campaign=ob_us_nov26_memes&amp;utm_content=ob_l3v2_jordan_peele_free_throw_ig&amp;utm_term=instagram">Copy</button></div>
   </div>
 </article>
 <article class="ad">
@@ -159,10 +159,10 @@ button.done{background:var(--accent);color:#fff;border-color:var(--accent)}
   </div>
   <div class="meta">
     <p class="num">Ad 7 · when the last leg of my $2 at +60000 goes to overtime</p>
-    <div class="field"><span>Ad set A: ad name</span><code>OB_L3v4_jordan-peele_overtime_A</code><button data-copy="OB_L3v4_jordan-peele_overtime_A">Copy</button></div>
-    <div class="field"><span>Ad set A: URL parameters</span><code>utm_source=meta&amp;utm_medium=paid_social&amp;utm_campaign=ob_us_nov26_memes&amp;utm_content=ob_l3v4_jordan_peele_overtime_a&amp;utm_term=advplus</code><button data-copy="utm_source=meta&amp;utm_medium=paid_social&amp;utm_campaign=ob_us_nov26_memes&amp;utm_content=ob_l3v4_jordan_peele_overtime_a&amp;utm_term=advplus">Copy</button></div>
-    <div class="field"><span>Ad set B: ad name</span><code>OB_L3v4_jordan-peele_overtime_B</code><button data-copy="OB_L3v4_jordan-peele_overtime_B">Copy</button></div>
-    <div class="field"><span>Ad set B: URL parameters</span><code>utm_source=meta&amp;utm_medium=paid_social&amp;utm_campaign=ob_us_nov26_memes&amp;utm_content=ob_l3v4_jordan_peele_overtime_b&amp;utm_term=original</code><button data-copy="utm_source=meta&amp;utm_medium=paid_social&amp;utm_campaign=ob_us_nov26_memes&amp;utm_content=ob_l3v4_jordan_peele_overtime_b&amp;utm_term=original">Copy</button></div>
+    <div class="field"><span>Facebook ad set: ad name</span><code>OB_L3v4_jordan-peele_overtime_FB</code><button data-copy="OB_L3v4_jordan-peele_overtime_FB">Copy</button></div>
+    <div class="field"><span>Facebook ad set: URL parameters</span><code>utm_source=meta&amp;utm_medium=paid_social&amp;utm_campaign=ob_us_nov26_memes&amp;utm_content=ob_l3v4_jordan_peele_overtime_fb&amp;utm_term=facebook</code><button data-copy="utm_source=meta&amp;utm_medium=paid_social&amp;utm_campaign=ob_us_nov26_memes&amp;utm_content=ob_l3v4_jordan_peele_overtime_fb&amp;utm_term=facebook">Copy</button></div>
+    <div class="field"><span>Instagram ad set: ad name</span><code>OB_L3v4_jordan-peele_overtime_IG</code><button data-copy="OB_L3v4_jordan-peele_overtime_IG">Copy</button></div>
+    <div class="field"><span>Instagram ad set: URL parameters</span><code>utm_source=meta&amp;utm_medium=paid_social&amp;utm_campaign=ob_us_nov26_memes&amp;utm_content=ob_l3v4_jordan_peele_overtime_ig&amp;utm_term=instagram</code><button data-copy="utm_source=meta&amp;utm_medium=paid_social&amp;utm_campaign=ob_us_nov26_memes&amp;utm_content=ob_l3v4_jordan_peele_overtime_ig&amp;utm_term=instagram">Copy</button></div>
   </div>
 </article>
 <article class="ad">
@@ -172,10 +172,10 @@ button.done{background:var(--accent);color:#fff;border-color:var(--accent)}
   </div>
   <div class="meta">
     <p class="num">Ad 8 · when the group chat finally asks who&#x27;s picking my parlays</p>
-    <div class="field"><span>Ad set A: ad name</span><code>OB_W3v3_leo-toast_group-chat-wants-picks_A</code><button data-copy="OB_W3v3_leo-toast_group-chat-wants-picks_A">Copy</button></div>
-    <div class="field"><span>Ad set A: URL parameters</span><code>utm_source=meta&amp;utm_medium=paid_social&amp;utm_campaign=ob_us_nov26_memes&amp;utm_content=ob_w3v3_leo_toast_group_chat_wants_picks_a&amp;utm_term=advplus</code><button data-copy="utm_source=meta&amp;utm_medium=paid_social&amp;utm_campaign=ob_us_nov26_memes&amp;utm_content=ob_w3v3_leo_toast_group_chat_wants_picks_a&amp;utm_term=advplus">Copy</button></div>
-    <div class="field"><span>Ad set B: ad name</span><code>OB_W3v3_leo-toast_group-chat-wants-picks_B</code><button data-copy="OB_W3v3_leo-toast_group-chat-wants-picks_B">Copy</button></div>
-    <div class="field"><span>Ad set B: URL parameters</span><code>utm_source=meta&amp;utm_medium=paid_social&amp;utm_campaign=ob_us_nov26_memes&amp;utm_content=ob_w3v3_leo_toast_group_chat_wants_picks_b&amp;utm_term=original</code><button data-copy="utm_source=meta&amp;utm_medium=paid_social&amp;utm_campaign=ob_us_nov26_memes&amp;utm_content=ob_w3v3_leo_toast_group_chat_wants_picks_b&amp;utm_term=original">Copy</button></div>
+    <div class="field"><span>Facebook ad set: ad name</span><code>OB_W3v3_leo-toast_group-chat-wants-picks_FB</code><button data-copy="OB_W3v3_leo-toast_group-chat-wants-picks_FB">Copy</button></div>
+    <div class="field"><span>Facebook ad set: URL parameters</span><code>utm_source=meta&amp;utm_medium=paid_social&amp;utm_campaign=ob_us_nov26_memes&amp;utm_content=ob_w3v3_leo_toast_group_chat_wants_picks_fb&amp;utm_term=facebook</code><button data-copy="utm_source=meta&amp;utm_medium=paid_social&amp;utm_campaign=ob_us_nov26_memes&amp;utm_content=ob_w3v3_leo_toast_group_chat_wants_picks_fb&amp;utm_term=facebook">Copy</button></div>
+    <div class="field"><span>Instagram ad set: ad name</span><code>OB_W3v3_leo-toast_group-chat-wants-picks_IG</code><button data-copy="OB_W3v3_leo-toast_group-chat-wants-picks_IG">Copy</button></div>
+    <div class="field"><span>Instagram ad set: URL parameters</span><code>utm_source=meta&amp;utm_medium=paid_social&amp;utm_campaign=ob_us_nov26_memes&amp;utm_content=ob_w3v3_leo_toast_group_chat_wants_picks_ig&amp;utm_term=instagram</code><button data-copy="utm_source=meta&amp;utm_medium=paid_social&amp;utm_campaign=ob_us_nov26_memes&amp;utm_content=ob_w3v3_leo_toast_group_chat_wants_picks_ig&amp;utm_term=instagram">Copy</button></div>
   </div>
 </article>
 
