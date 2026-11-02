@@ -36,7 +36,7 @@ button.done{background:var(--accent);color:#fff;border-color:var(--accent)}
 </style></head><body><div class="wrap">
 <p class="sub"><a href="../" style="color:var(--accent);font-weight:600">← Round 1 ads</a></p>
 <h1>OddsBoss: Round 2 campaign setup</h1>
-<p class="lead">How to set up the new campaign: two ad sets with the same 8 ads, optimised for checkout starts. The only difference between the ad sets is the audience. Meta's A/B test splits people between them, so the audiences don't overlap. Every ad uses the same text.</p>
+<p class="lead">How to set up the new campaign: two ad sets with the same 8 ads, optimised for checkout starts. Both target men. The only difference between the ad sets is the audience type. Meta's A/B test splits people between them, so the audiences don't overlap. Every ad uses the same text.</p>
 <a class="btn" href="oddsboss-round-2-ads.zip" download>Download the 8 ads (.zip)</a>
 
 <div class="box"><h3>1 · Campaign</h3><ol>
@@ -47,18 +47,18 @@ button.done{background:var(--accent);color:#fff;border-color:var(--accent)}
 <div class="box"><h3>2 · Ad set A: Advantage+ audience</h3><ol>
 <li>Name <code>OB_US_R2_AdvPlus</code>. Budget <b>$45 per day</b>. Bid strategy <b>Highest volume</b>.</li>
 <li>Conversion location <b>Website</b>, pixel <b>PV1 Ads Meta Pixel</b>, conversion event <b>Initiate checkout</b>. Attribution <b>7-day click or 1-day view</b>.</li>
-<li>Audience: <b>Advantage+ audience ON</b>. Audience controls: location <b>United States</b>, <b>minimum age 21</b>. No audience suggestions.</li>
+<li>Audience: <b>Advantage+ audience ON</b>. Audience controls: location <b>United States</b>, <b>minimum age 21</b>. Audience suggestions: gender <b>Men</b>, nothing else.</li>
 <li>Placements: <b>Advantage+ placements</b>.</li>
-<li>Schedule: start date <b>tomorrow</b>, so nothing spends before the test is set up.</li>
-<li>Add the 8 ads (step 4), using the <b>ad set A</b> names and URL parameters. Publish, then go straight to step 3.</li>
+<li>Schedule: leave the default, so it starts as soon as it's published.</li>
+<li>Add the 8 ads (step 4), using the <b>ad set A</b> names and URL parameters. Publish, then do step 3 straight away.</li>
 </ol></div>
 
 <div class="box"><h3>3 · Ad set B and the A/B test</h3><ol>
 <li>In Ads Manager, tick ad set A and click <b>A/B test</b>. Choose to <b>duplicate the ad set</b>, and pick <b>Audience</b> as the variable.</li>
 <li>In the copy: name <code>OB_US_R2_Original</code>. Budget <b>$45 per day</b>. Leave every other ad set setting exactly as in A.</li>
-<li>Audience: click <b>Switch to original audience options</b>. Location <b>United States</b> (people living in or recently in). Age <b>21</b> to <b>65+</b>. Gender all. Detailed targeting empty, and if an <b>Advantage detailed targeting</b> box shows, untick it.</li>
+<li>Audience: click <b>Switch to original audience options</b>. Location <b>United States</b> (people living in or recently in). Age <b>21</b> to <b>65+</b>. Gender <b>Men</b>. Detailed targeting empty, and if an <b>Advantage detailed targeting</b> box shows, untick it.</li>
 <li>Rename the 8 copied ads to the <b>ad set B</b> names and paste the <b>ad set B</b> URL parameters (they end in <code>utm_term=original</code>).</li>
-<li>Test settings: key metric <b>Cost per result (Initiate checkout)</b>. Start at the same time as ad set A, end date <b>14 days</b> later. If there's an option to end the test early when a winner is found, turn it <b>off</b>.</li>
+<li>Test settings: key metric <b>Cost per result (Initiate checkout)</b>. Start <b>now</b>, end date <b>14 days</b> from today. If there's an option to end the test early when a winner is found, turn it <b>off</b>.</li>
 <li>Publish the test. Don't edit either ad set while the test runs: edits restart it.</li>
 </ol></div>
 
