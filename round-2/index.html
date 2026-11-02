@@ -29,81 +29,66 @@ figcaption{margin-top:6px;font-size:14px} figcaption a{color:var(--accent);font-
 .field.block pre{white-space:pre-wrap;margin:0;font:14px/1.5 ui-monospace,Consolas,monospace;background:var(--bg);border:1px solid var(--line);border-radius:8px;padding:10px;width:100%}
 button{font:inherit;font-size:13px;font-weight:600;border:1px solid var(--line);background:var(--card);color:var(--ink);border-radius:8px;padding:4px 10px;cursor:pointer}
 button.done{background:var(--accent);color:#fff;border-color:var(--accent)}
+.why{margin:0 0 10px;color:var(--muted);font-size:15px}
+.copybox .field{margin:12px 0}
+.copybox pre{white-space:pre-wrap;margin:0;font:15px/1.5 ui-monospace,Consolas,monospace;background:var(--bg);border:1px solid var(--line);border-radius:8px;padding:10px;width:100%}
+.day{display:inline-block;font-weight:800;color:var(--accent);min-width:5.5em}
 </style></head><body><div class="wrap">
 <p class="sub"><a href="../" style="color:var(--accent);font-weight:600">← Round 1 ads</a></p>
-<h1>OddsBoss: Round 2 Meta ads</h1>
-<p class="lead">Round 1 got cheap clicks but was optimised for landing page views, with no pixel. Round 2 runs the winning memes again, plus 11 new versions of them, optimised for people who start checkout. 13 ads in 2 ad sets, one campaign budget of $90 a day, US, age 21+.</p>
+<h1>OddsBoss: Round 2 plan</h1>
+<p class="lead">Round 1's meme ads got 7 to 9% click rates, but they ran with no pixel and were optimised for landing page views. Round 2 runs the two winners again plus 6 new versions of them, optimised for people who <b>start checkout</b>. Every ad uses the same text as Round 1, so the image is the only thing being tested.</p>
 <a class="btn" href="oddsboss-round-2-ads.zip" download>Download all Round 2 ads (.zip)</a>
 
-<div class="box warn"><h3>Before you start</h3><ul>
-<li><b>Wait for the owner's go-ahead</b> that the pixel test passed. Don't publish before that.</li>
-<li><b>Pixel:</b> use <code>PV1 Ads Meta Pixel</code> (ID <code>4567744503371725</code>). Not "PV Ads Meta Pixel".</li>
-<li>In Events Manager, check that <b>InitiateCheckout</b> shows as received in the last 7 days. If it doesn't, open <code>getoddsboss.com/start-now/</code> once on your phone and check again after 30 minutes.</li>
-<li>Upload the ads exactly as they are. No added text, logos, stickers or music.</li>
-</ul></div>
+<div class="box warn"><h3>Don't launch until the owner says go</h3><p style="margin:0">The owner is putting a pixel fix live first. When they say go, do the pixel check below before anything else.</p></div>
 
-<div class="box"><h3>1. Campaign</h3><ol>
-<li>New campaign. Objective: <b>Sales</b>. Name: <code>OddsBoss_US_Memes_Test2</code>.</li>
-<li><b>Advantage campaign budget: ON</b>, <b>$90 per day</b>. Bid strategy: <b>Highest volume</b> (no cost cap, no bid cap).</li>
-<li>A/B test: OFF. Special ad categories: none.</li>
+<div class="box"><h3>Step 1 · Pixel check (10 minutes)</h3><ol>
+<li>Events Manager → <b>PV1 Ads Meta Pixel</b> (ID <code>4567744503371725</code>) → <b>Test events</b>.</li>
+<li>On your phone, send yourself <code>https://getoddsboss.com/?utm_source=meta&amp;utm_medium=paid_social&amp;utm_campaign=ob_us_nov26_memes&amp;utm_content=test</code> in an Instagram DM and tap it, so it opens in Instagram's own browser.</li>
+<li>Tap <b>Get today's picks</b>. Within a minute, Test events should show <b>PageView</b> and <b>InitiateCheckout</b>.</li>
+<li>Do the same from the Facebook app. Screenshot both results and send them to the owner. If either event is missing, stop and tell the owner.</li>
 </ol></div>
 
-<div class="box"><h3>2. Ad sets (make 2, settings are identical)</h3><ol>
-<li>Names: <code>OB_US_R2_Losses</code> and <code>OB_US_R2_Wins</code>.</li>
-<li>Conversion location: <b>Website</b>. Pixel: <code>PV1 Ads Meta Pixel</code>. Conversion event: <b>Initiate checkout</b>.</li>
-<li>Attribution: <b>7-day click or 1-day view</b>.</li>
-<li>Audience: <b>Advantage+ audience ON</b>. Under audience controls set <b>Location: United States</b> and <b>Minimum age: 21</b>. Leave suggestions empty.</li>
+<div class="box"><h3>Step 2 · Campaign and ad set</h3><ol>
+<li>New campaign. Objective <b>Sales</b>. Name <code>OddsBoss_US_Memes_Test2</code>. Advantage campaign budget <b>OFF</b>. A/B test OFF. Special ad categories: none.</li>
+<li>One ad set: <code>OB_US_R2_Memes</code>. Budget <b>$90 per day</b>, no end date. Bid strategy <b>Highest volume</b>.</li>
+<li>Conversion location <b>Website</b>, pixel <b>PV1 Ads Meta Pixel</b>, conversion event <b>Initiate checkout</b>. Attribution <b>7-day click or 1-day view</b>.</li>
+<li>Audience: <b>Advantage+ audience ON</b>. Audience controls: location <b>United States</b>, <b>minimum age 21</b>. No suggestions.</li>
 <li>Placements: <b>Advantage+ placements</b>.</li>
 </ol></div>
 
-<div class="box"><h3>3. Ads</h3><ol>
-<li>Format: <b>Single image</b>. Upload the <b>feed 4:5</b> file, then use "Edit placements" to put the <b>stories 9:16</b> file on Stories and Reels.</li>
-<li>Paste the ad name, primary text, headline, website URL and <b>URL parameters</b> for each ad below. Paste the URL parameters exactly; don't add <code>{{ }}</code> macros or IDs.</li>
-<li><b>Advantage+ creative / creative enhancements: turn every option OFF.</b> <b>Music: OFF.</b> Multi-advertiser ads: OFF.</li>
-</ol></div>
+<div class="box copybox"><h3>Step 3 · Ads (the same text on all 8)</h3><ol>
+<li>Format <b>Single image</b>. Upload the <b>feed 4:5</b> file, then "Edit placements" to put the <b>stories 9:16</b> file on Stories and Reels.</li>
+<li>Paste this text on every ad, and each ad's own name and URL parameters from the list below.</li>
+<li>Advantage+ creative / creative enhancements: <b>every option OFF</b>. Music OFF. Multi-advertiser ads OFF.</li>
+</ol>
+<div class="field"><span>Primary text</span><pre>Stop throwing money at random parlays. OddsBoss researches, analyzes and gives you everything you need in seconds.</pre><button data-copy="Stop throwing money at random parlays. OddsBoss researches, analyzes and gives you everything you need in seconds.">Copy</button></div>
+<div class="field"><span>Headline</span><pre>Tap to see why 10k+ users in the USA trust OddsBoss</pre><button data-copy="Tap to see why 10k+ users in the USA trust OddsBoss">Copy</button></div>
+<div class="field"><span>Website URL</span><pre>https://getoddsboss.com/</pre><button data-copy="https://getoddsboss.com/">Copy</button></div>
+<div class="field"><span>Call to action</span><code>Learn More</code></div>
+</div>
 
-<h2>Ad set 1: Losses</h2><p class="sub">Ad set name: <code>OB_US_R2_Losses</code> · 9 ads (2 Round 1 winners + 7 new)</p>
+<h2>Launch now: 8 ads</h2><p class="sub">All in ad set <code>OB_US_R2_Memes</code>.</p>
 <article class="ad">
   <div class="imgs">
-    <figure><img src="../ads/06-crying-jordan-feed-4x5.png" alt="Crying Jordan (Round 1 winner), feed size" loading="lazy"><figcaption><a href="../ads/06-crying-jordan-feed-4x5.png" download>Download feed 4:5</a></figcaption></figure>
-    <figure class="tall"><img src="../ads/06-crying-jordan-stories-9x16.png" alt="Crying Jordan (Round 1 winner), stories size" loading="lazy"><figcaption><a href="../ads/06-crying-jordan-stories-9x16.png" download>Download stories 9:16</a></figcaption></figure>
+    <figure><img src="../ads/06-crying-jordan-feed-4x5.png" alt="Crying Jordan: dies by one rebound (Round 1), feed size" loading="lazy"><figcaption><a href="../ads/06-crying-jordan-feed-4x5.png" download>Download feed 4:5</a></figcaption></figure>
+    <figure class="tall"><img src="../ads/06-crying-jordan-stories-9x16.png" alt="Crying Jordan: dies by one rebound (Round 1), stories size" loading="lazy"><figcaption><a href="../ads/06-crying-jordan-stories-9x16.png" download>Download stories 9:16</a></figcaption></figure>
   </div>
   <div class="meta">
-    <p class="num">Ad 1 · Crying Jordan (Round 1 winner)</p>
+    <p class="num">Ad 1 · Crying Jordan: dies by one rebound (Round 1)</p>
+    <p class="why">Round 1 winner: 44% of spend, 9.4% click rate. The baseline every new ad is compared with.</p>
     <div class="field"><span>Ad name</span><code>OB_L1_crying-jordan_control</code><button data-copy="OB_L1_crying-jordan_control">Copy</button></div>
-    <div class="field block"><span>Primary text</span><pre>lost by one rebound. we&#x27;ve all been there.
-apps take a cut on every leg, so 9 legs means 9 cuts.
-see what your parlay is really worth before you place it.
-
-21+ only. Gambling problem? Call 1-800-GAMBLER.</pre><button data-copy="lost by one rebound. we&#x27;ve all been there.
-apps take a cut on every leg, so 9 legs means 9 cuts.
-see what your parlay is really worth before you place it.
-
-21+ only. Gambling problem? Call 1-800-GAMBLER.">Copy</button></div>
-    <div class="field"><span>Headline</span><code>Next time, get full price.</code><button data-copy="Next time, get full price.">Copy</button></div>
-    <div class="field"><span>Call to action</span><code>Learn More</code></div>
-    <div class="field"><span>Website URL</span><code>https://getoddsboss.com/</code><button data-copy="https://getoddsboss.com/">Copy</button></div>
     <div class="field"><span>URL parameters</span><code>utm_source=meta&amp;utm_medium=paid_social&amp;utm_campaign=ob_us_nov26_memes&amp;utm_content=ob_l1_crying_jordan_control</code><button data-copy="utm_source=meta&amp;utm_medium=paid_social&amp;utm_campaign=ob_us_nov26_memes&amp;utm_content=ob_l1_crying_jordan_control">Copy</button></div>
   </div>
 </article>
 <article class="ad">
   <div class="imgs">
-    <figure><img src="../ads/08-jordan-peele-feed-4x5.png" alt="Jordan Peele (Round 1 runner-up), feed size" loading="lazy"><figcaption><a href="../ads/08-jordan-peele-feed-4x5.png" download>Download feed 4:5</a></figcaption></figure>
-    <figure class="tall"><img src="../ads/08-jordan-peele-stories-9x16.png" alt="Jordan Peele (Round 1 runner-up), stories size" loading="lazy"><figcaption><a href="../ads/08-jordan-peele-stories-9x16.png" download>Download stories 9:16</a></figcaption></figure>
+    <figure><img src="../ads/08-jordan-peele-feed-4x5.png" alt="Jordan Peele: one leg away, phone at 2% (Round 1), feed size" loading="lazy"><figcaption><a href="../ads/08-jordan-peele-feed-4x5.png" download>Download feed 4:5</a></figcaption></figure>
+    <figure class="tall"><img src="../ads/08-jordan-peele-stories-9x16.png" alt="Jordan Peele: one leg away, phone at 2% (Round 1), stories size" loading="lazy"><figcaption><a href="../ads/08-jordan-peele-stories-9x16.png" download>Download stories 9:16</a></figcaption></figure>
   </div>
   <div class="meta">
-    <p class="num">Ad 2 · Jordan Peele (Round 1 runner-up)</p>
+    <p class="num">Ad 2 · Jordan Peele: one leg away, phone at 2% (Round 1)</p>
+    <p class="why">Round 1 runner-up: 8.6% click rate before it stopped delivering after one day.</p>
     <div class="field"><span>Ad name</span><code>OB_L3_jordan-peele_control</code><button data-copy="OB_L3_jordan-peele_control">Copy</button></div>
-    <div class="field block"><span>Primary text</span><pre>one leg away. 2% battery.
-at least know it pays full price: $1 at +100000 = $1,000. at +80000 it&#x27;s $800.
-
-21+ only. Gambling problem? Call 1-800-GAMBLER.</pre><button data-copy="one leg away. 2% battery.
-at least know it pays full price: $1 at +100000 = $1,000. at +80000 it&#x27;s $800.
-
-21+ only. Gambling problem? Call 1-800-GAMBLER.">Copy</button></div>
-    <div class="field"><span>Headline</span><code>Same parlay. $200 more.</code><button data-copy="Same parlay. $200 more.">Copy</button></div>
-    <div class="field"><span>Call to action</span><code>Learn More</code></div>
-    <div class="field"><span>Website URL</span><code>https://getoddsboss.com/</code><button data-copy="https://getoddsboss.com/">Copy</button></div>
     <div class="field"><span>URL parameters</span><code>utm_source=meta&amp;utm_medium=paid_social&amp;utm_campaign=ob_us_nov26_memes&amp;utm_content=ob_l3_jordan_peele_control</code><button data-copy="utm_source=meta&amp;utm_medium=paid_social&amp;utm_campaign=ob_us_nov26_memes&amp;utm_content=ob_l3_jordan_peele_control">Copy</button></div>
   </div>
 </article>
@@ -114,60 +99,9 @@ at least know it pays full price: $1 at +100000 = $1,000. at +80000 it&#x27;s $8
   </div>
   <div class="meta">
     <p class="num">Ad 3 · when the 6-leg i put $5 on at +28000 dies by half a point</p>
+    <p class="why">Closest to the winning caption: same photo, same &quot;dies by&quot; punchline, a different sport moment.</p>
     <div class="field"><span>Ad name</span><code>OB_L1v2_crying-jordan_half-point</code><button data-copy="OB_L1v2_crying-jordan_half-point">Copy</button></div>
-    <div class="field block"><span>Primary text</span><pre>half a point. we&#x27;ve all been there.
-OddsBoss builds every morning&#x27;s parlays from sharp money and pro bettors, then shows you which book pays the most.
-
-21+ only. Gambling problem? Call 1-800-GAMBLER.</pre><button data-copy="half a point. we&#x27;ve all been there.
-OddsBoss builds every morning&#x27;s parlays from sharp money and pro bettors, then shows you which book pays the most.
-
-21+ only. Gambling problem? Call 1-800-GAMBLER.">Copy</button></div>
-    <div class="field"><span>Headline</span><code>Stop guessing your parlays</code><button data-copy="Stop guessing your parlays">Copy</button></div>
-    <div class="field"><span>Call to action</span><code>Learn More</code></div>
-    <div class="field"><span>Website URL</span><code>https://getoddsboss.com/</code><button data-copy="https://getoddsboss.com/">Copy</button></div>
     <div class="field"><span>URL parameters</span><code>utm_source=meta&amp;utm_medium=paid_social&amp;utm_campaign=ob_us_nov26_memes&amp;utm_content=ob_l1v2_crying_jordan_half_point</code><button data-copy="utm_source=meta&amp;utm_medium=paid_social&amp;utm_campaign=ob_us_nov26_memes&amp;utm_content=ob_l1v2_crying_jordan_half_point">Copy</button></div>
-  </div>
-</article>
-<article class="ad">
-  <div class="imgs">
-    <figure><img src="ads/OB_L1v3_crying-jordan_backup-qb_4x5.png" alt="when my 5-leg hits 4 legs and the 5th is the backup qb, feed size" loading="lazy"><figcaption><a href="ads/OB_L1v3_crying-jordan_backup-qb_4x5.png" download>Download feed 4:5</a></figcaption></figure>
-    <figure class="tall"><img src="ads/OB_L1v3_crying-jordan_backup-qb_9x16.png" alt="when my 5-leg hits 4 legs and the 5th is the backup qb, stories size" loading="lazy"><figcaption><a href="ads/OB_L1v3_crying-jordan_backup-qb_9x16.png" download>Download stories 9:16</a></figcaption></figure>
-  </div>
-  <div class="meta">
-    <p class="num">Ad 4 · when my 5-leg hits 4 legs and the 5th is the backup qb</p>
-    <div class="field"><span>Ad name</span><code>OB_L1v3_crying-jordan_backup-qb</code><button data-copy="OB_L1v3_crying-jordan_backup-qb">Copy</button></div>
-    <div class="field block"><span>Primary text</span><pre>4 for 5. the backup qb. every time.
-built picks beat gut picks. OddsBoss finds the legs the sharp money likes, every morning.
-
-21+ only. Gambling problem? Call 1-800-GAMBLER.</pre><button data-copy="4 for 5. the backup qb. every time.
-built picks beat gut picks. OddsBoss finds the legs the sharp money likes, every morning.
-
-21+ only. Gambling problem? Call 1-800-GAMBLER.">Copy</button></div>
-    <div class="field"><span>Headline</span><code>Today&#x27;s parlays, ready to bet</code><button data-copy="Today&#x27;s parlays, ready to bet">Copy</button></div>
-    <div class="field"><span>Call to action</span><code>Learn More</code></div>
-    <div class="field"><span>Website URL</span><code>https://getoddsboss.com/</code><button data-copy="https://getoddsboss.com/">Copy</button></div>
-    <div class="field"><span>URL parameters</span><code>utm_source=meta&amp;utm_medium=paid_social&amp;utm_campaign=ob_us_nov26_memes&amp;utm_content=ob_l1v3_crying_jordan_backup_qb</code><button data-copy="utm_source=meta&amp;utm_medium=paid_social&amp;utm_campaign=ob_us_nov26_memes&amp;utm_content=ob_l1v3_crying_jordan_backup_qb">Copy</button></div>
-  </div>
-</article>
-<article class="ad">
-  <div class="imgs">
-    <figure><img src="ads/OB_L1v4_crying-jordan_sat-the-4th_4x5.png" alt="when my $10 at +15000 dies because he sat the whole 4th quarter, feed size" loading="lazy"><figcaption><a href="ads/OB_L1v4_crying-jordan_sat-the-4th_4x5.png" download>Download feed 4:5</a></figcaption></figure>
-    <figure class="tall"><img src="ads/OB_L1v4_crying-jordan_sat-the-4th_9x16.png" alt="when my $10 at +15000 dies because he sat the whole 4th quarter, stories size" loading="lazy"><figcaption><a href="ads/OB_L1v4_crying-jordan_sat-the-4th_9x16.png" download>Download stories 9:16</a></figcaption></figure>
-  </div>
-  <div class="meta">
-    <p class="num">Ad 5 · when my $10 at +15000 dies because he sat the whole 4th quarter</p>
-    <div class="field"><span>Ad name</span><code>OB_L1v4_crying-jordan_sat-the-4th</code><button data-copy="OB_L1v4_crying-jordan_sat-the-4th">Copy</button></div>
-    <div class="field block"><span>Primary text</span><pre>he played 3 quarters. your parlay needed 4.
-OddsBoss picks legs with the numbers behind them, not the vibes.
-
-21+ only. Gambling problem? Call 1-800-GAMBLER.</pre><button data-copy="he played 3 quarters. your parlay needed 4.
-OddsBoss picks legs with the numbers behind them, not the vibes.
-
-21+ only. Gambling problem? Call 1-800-GAMBLER.">Copy</button></div>
-    <div class="field"><span>Headline</span><code>Picks with numbers behind them</code><button data-copy="Picks with numbers behind them">Copy</button></div>
-    <div class="field"><span>Call to action</span><code>Learn More</code></div>
-    <div class="field"><span>Website URL</span><code>https://getoddsboss.com/</code><button data-copy="https://getoddsboss.com/">Copy</button></div>
-    <div class="field"><span>URL parameters</span><code>utm_source=meta&amp;utm_medium=paid_social&amp;utm_campaign=ob_us_nov26_memes&amp;utm_content=ob_l1v4_crying_jordan_sat_the_4th</code><button data-copy="utm_source=meta&amp;utm_medium=paid_social&amp;utm_campaign=ob_us_nov26_memes&amp;utm_content=ob_l1v4_crying_jordan_sat_the_4th">Copy</button></div>
   </div>
 </article>
 <article class="ad">
@@ -176,19 +110,22 @@ OddsBoss picks legs with the numbers behind them, not the vibes.
     <figure class="tall"><img src="ads/OB_L1v5_crying-jordan_other-app-paid-more_9x16.png" alt="when i finally cash the 4-leg and find out the other app paid $180 more, stories size" loading="lazy"><figcaption><a href="ads/OB_L1v5_crying-jordan_other-app-paid-more_9x16.png" download>Download stories 9:16</a></figcaption></figure>
   </div>
   <div class="meta">
-    <p class="num">Ad 6 · when i finally cash the 4-leg and find out the other app paid $180 more</p>
+    <p class="num">Ad 4 · when i finally cash the 4-leg and find out the other app paid $180 more</p>
+    <p class="why">Same photo with the payout angle: the other app paid more. Ties the joke to what OddsBoss does.</p>
     <div class="field"><span>Ad name</span><code>OB_L1v5_crying-jordan_other-app-paid-more</code><button data-copy="OB_L1v5_crying-jordan_other-app-paid-more">Copy</button></div>
-    <div class="field block"><span>Primary text</span><pre>same 4 legs. same $10. $180 less.
-every book prices your parlay differently. OddsBoss shows you which one pays most before you tap place.
-
-21+ only. Gambling problem? Call 1-800-GAMBLER.</pre><button data-copy="same 4 legs. same $10. $180 less.
-every book prices your parlay differently. OddsBoss shows you which one pays most before you tap place.
-
-21+ only. Gambling problem? Call 1-800-GAMBLER.">Copy</button></div>
-    <div class="field"><span>Headline</span><code>Same parlay. $180 more.</code><button data-copy="Same parlay. $180 more.">Copy</button></div>
-    <div class="field"><span>Call to action</span><code>Learn More</code></div>
-    <div class="field"><span>Website URL</span><code>https://getoddsboss.com/</code><button data-copy="https://getoddsboss.com/">Copy</button></div>
     <div class="field"><span>URL parameters</span><code>utm_source=meta&amp;utm_medium=paid_social&amp;utm_campaign=ob_us_nov26_memes&amp;utm_content=ob_l1v5_crying_jordan_other_app_paid_more</code><button data-copy="utm_source=meta&amp;utm_medium=paid_social&amp;utm_campaign=ob_us_nov26_memes&amp;utm_content=ob_l1v5_crying_jordan_other_app_paid_more">Copy</button></div>
+  </div>
+</article>
+<article class="ad">
+  <div class="imgs">
+    <figure><img src="ads/OB_L1v3_crying-jordan_backup-qb_4x5.png" alt="when my 5-leg hits 4 legs and the 5th is the backup qb, feed size" loading="lazy"><figcaption><a href="ads/OB_L1v3_crying-jordan_backup-qb_4x5.png" download>Download feed 4:5</a></figcaption></figure>
+    <figure class="tall"><img src="ads/OB_L1v3_crying-jordan_backup-qb_9x16.png" alt="when my 5-leg hits 4 legs and the 5th is the backup qb, stories size" loading="lazy"><figcaption><a href="ads/OB_L1v3_crying-jordan_backup-qb_9x16.png" download>Download stories 9:16</a></figcaption></figure>
+  </div>
+  <div class="meta">
+    <p class="num">Ad 5 · when my 5-leg hits 4 legs and the 5th is the backup qb</p>
+    <p class="why">Football version of the winner, during NFL season.</p>
+    <div class="field"><span>Ad name</span><code>OB_L1v3_crying-jordan_backup-qb</code><button data-copy="OB_L1v3_crying-jordan_backup-qb">Copy</button></div>
+    <div class="field"><span>URL parameters</span><code>utm_source=meta&amp;utm_medium=paid_social&amp;utm_campaign=ob_us_nov26_memes&amp;utm_content=ob_l1v3_crying_jordan_backup_qb</code><button data-copy="utm_source=meta&amp;utm_medium=paid_social&amp;utm_campaign=ob_us_nov26_memes&amp;utm_content=ob_l1v3_crying_jordan_backup_qb">Copy</button></div>
   </div>
 </article>
 <article class="ad">
@@ -197,40 +134,10 @@ every book prices your parlay differently. OddsBoss shows you which one pays mos
     <figure class="tall"><img src="ads/OB_L3v2_jordan-peele_free-throw_9x16.png" alt="when my $5 at +22000 needs one free throw and he shoots 48%, stories size" loading="lazy"><figcaption><a href="ads/OB_L3v2_jordan-peele_free-throw_9x16.png" download>Download stories 9:16</a></figcaption></figure>
   </div>
   <div class="meta">
-    <p class="num">Ad 7 · when my $5 at +22000 needs one free throw and he shoots 48%</p>
+    <p class="num">Ad 6 · when my $5 at +22000 needs one free throw and he shoots 48%</p>
+    <p class="why">Second-best photo with a basketball sweat moment.</p>
     <div class="field"><span>Ad name</span><code>OB_L3v2_jordan-peele_free-throw</code><button data-copy="OB_L3v2_jordan-peele_free-throw">Copy</button></div>
-    <div class="field block"><span>Primary text</span><pre>48% from the line. 100% of my money.
-OddsBoss builds parlays from big-money moves and pro bettors, ready every morning.
-
-21+ only. Gambling problem? Call 1-800-GAMBLER.</pre><button data-copy="48% from the line. 100% of my money.
-OddsBoss builds parlays from big-money moves and pro bettors, ready every morning.
-
-21+ only. Gambling problem? Call 1-800-GAMBLER.">Copy</button></div>
-    <div class="field"><span>Headline</span><code>Stop guessing your parlays</code><button data-copy="Stop guessing your parlays">Copy</button></div>
-    <div class="field"><span>Call to action</span><code>Learn More</code></div>
-    <div class="field"><span>Website URL</span><code>https://getoddsboss.com/</code><button data-copy="https://getoddsboss.com/">Copy</button></div>
     <div class="field"><span>URL parameters</span><code>utm_source=meta&amp;utm_medium=paid_social&amp;utm_campaign=ob_us_nov26_memes&amp;utm_content=ob_l3v2_jordan_peele_free_throw</code><button data-copy="utm_source=meta&amp;utm_medium=paid_social&amp;utm_campaign=ob_us_nov26_memes&amp;utm_content=ob_l3v2_jordan_peele_free_throw">Copy</button></div>
-  </div>
-</article>
-<article class="ad">
-  <div class="imgs">
-    <figure><img src="ads/OB_L3v3_jordan-peele_kicker-in-the-snow_4x5.png" alt="when i&#x27;m 5 for 5 and the last leg is a kicker in the snow, feed size" loading="lazy"><figcaption><a href="ads/OB_L3v3_jordan-peele_kicker-in-the-snow_4x5.png" download>Download feed 4:5</a></figcaption></figure>
-    <figure class="tall"><img src="ads/OB_L3v3_jordan-peele_kicker-in-the-snow_9x16.png" alt="when i&#x27;m 5 for 5 and the last leg is a kicker in the snow, stories size" loading="lazy"><figcaption><a href="ads/OB_L3v3_jordan-peele_kicker-in-the-snow_9x16.png" download>Download stories 9:16</a></figcaption></figure>
-  </div>
-  <div class="meta">
-    <p class="num">Ad 8 · when i&#x27;m 5 for 5 and the last leg is a kicker in the snow</p>
-    <div class="field"><span>Ad name</span><code>OB_L3v3_jordan-peele_kicker-in-the-snow</code><button data-copy="OB_L3v3_jordan-peele_kicker-in-the-snow">Copy</button></div>
-    <div class="field block"><span>Primary text</span><pre>5 for 5. one kick. snow.
-next time, start with legs the sharp money backs. OddsBoss builds them every morning.
-
-21+ only. Gambling problem? Call 1-800-GAMBLER.</pre><button data-copy="5 for 5. one kick. snow.
-next time, start with legs the sharp money backs. OddsBoss builds them every morning.
-
-21+ only. Gambling problem? Call 1-800-GAMBLER.">Copy</button></div>
-    <div class="field"><span>Headline</span><code>Today&#x27;s parlays, ready to bet</code><button data-copy="Today&#x27;s parlays, ready to bet">Copy</button></div>
-    <div class="field"><span>Call to action</span><code>Learn More</code></div>
-    <div class="field"><span>Website URL</span><code>https://getoddsboss.com/</code><button data-copy="https://getoddsboss.com/">Copy</button></div>
-    <div class="field"><span>URL parameters</span><code>utm_source=meta&amp;utm_medium=paid_social&amp;utm_campaign=ob_us_nov26_memes&amp;utm_content=ob_l3v3_jordan_peele_kicker_in_the_snow</code><button data-copy="utm_source=meta&amp;utm_medium=paid_social&amp;utm_campaign=ob_us_nov26_memes&amp;utm_content=ob_l3v3_jordan_peele_kicker_in_the_snow">Copy</button></div>
   </div>
 </article>
 <article class="ad">
@@ -239,42 +146,60 @@ next time, start with legs the sharp money backs. OddsBoss builds them every mor
     <figure class="tall"><img src="ads/OB_L3v4_jordan-peele_overtime_9x16.png" alt="when the last leg of my $2 at +60000 goes to overtime, stories size" loading="lazy"><figcaption><a href="ads/OB_L3v4_jordan-peele_overtime_9x16.png" download>Download stories 9:16</a></figcaption></figure>
   </div>
   <div class="meta">
-    <p class="num">Ad 9 · when the last leg of my $2 at +60000 goes to overtime</p>
+    <p class="num">Ad 7 · when the last leg of my $2 at +60000 goes to overtime</p>
+    <p class="why">Second-best photo with a long-shot payout and overtime.</p>
     <div class="field"><span>Ad name</span><code>OB_L3v4_jordan-peele_overtime</code><button data-copy="OB_L3v4_jordan-peele_overtime">Copy</button></div>
-    <div class="field block"><span>Primary text</span><pre>overtime. no nails left.
-$2 at +60000 = $1,200. at another book it&#x27;s +48000 = $960. OddsBoss shows you which book pays most.
-
-21+ only. Gambling problem? Call 1-800-GAMBLER.</pre><button data-copy="overtime. no nails left.
-$2 at +60000 = $1,200. at another book it&#x27;s +48000 = $960. OddsBoss shows you which book pays most.
-
-21+ only. Gambling problem? Call 1-800-GAMBLER.">Copy</button></div>
-    <div class="field"><span>Headline</span><code>Same parlay. $240 more.</code><button data-copy="Same parlay. $240 more.">Copy</button></div>
-    <div class="field"><span>Call to action</span><code>Learn More</code></div>
-    <div class="field"><span>Website URL</span><code>https://getoddsboss.com/</code><button data-copy="https://getoddsboss.com/">Copy</button></div>
     <div class="field"><span>URL parameters</span><code>utm_source=meta&amp;utm_medium=paid_social&amp;utm_campaign=ob_us_nov26_memes&amp;utm_content=ob_l3v4_jordan_peele_overtime</code><button data-copy="utm_source=meta&amp;utm_medium=paid_social&amp;utm_campaign=ob_us_nov26_memes&amp;utm_content=ob_l3v4_jordan_peele_overtime">Copy</button></div>
   </div>
 </article>
-
-<h2>Ad set 2: Wins</h2><p class="sub">Ad set name: <code>OB_US_R2_Wins</code> · 4 new ads</p>
 <article class="ad">
   <div class="imgs">
     <figure><img src="ads/OB_W3v2_leo-toast_300-more-than-the-boys_4x5.png" alt="when my $5 at +30000 hits and i got $300 more than the boys on the same parlay, feed size" loading="lazy"><figcaption><a href="ads/OB_W3v2_leo-toast_300-more-than-the-boys_4x5.png" download>Download feed 4:5</a></figcaption></figure>
     <figure class="tall"><img src="ads/OB_W3v2_leo-toast_300-more-than-the-boys_9x16.png" alt="when my $5 at +30000 hits and i got $300 more than the boys on the same parlay, stories size" loading="lazy"><figcaption><a href="ads/OB_W3v2_leo-toast_300-more-than-the-boys_9x16.png" download>Download stories 9:16</a></figcaption></figure>
   </div>
   <div class="meta">
-    <p class="num">Ad 10 · when my $5 at +30000 hits and i got $300 more than the boys on the same parlay</p>
+    <p class="num">Ad 8 · when my $5 at +30000 hits and i got $300 more than the boys on the same parlay</p>
+    <p class="why">Best &quot;win&quot; photo on cost per visit in Round 1, with the payout angle.</p>
     <div class="field"><span>Ad name</span><code>OB_W3v2_leo-toast_300-more-than-the-boys</code><button data-copy="OB_W3v2_leo-toast_300-more-than-the-boys">Copy</button></div>
-    <div class="field block"><span>Primary text</span><pre>same legs. same $5. i got $300 more.
-+30000 at my book, +24000 at theirs. OddsBoss prices every parlay at every book and shows you the one that pays most.
-
-21+ only. Gambling problem? Call 1-800-GAMBLER.</pre><button data-copy="same legs. same $5. i got $300 more.
-+30000 at my book, +24000 at theirs. OddsBoss prices every parlay at every book and shows you the one that pays most.
-
-21+ only. Gambling problem? Call 1-800-GAMBLER.">Copy</button></div>
-    <div class="field"><span>Headline</span><code>Same parlay. $300 more.</code><button data-copy="Same parlay. $300 more.">Copy</button></div>
-    <div class="field"><span>Call to action</span><code>Learn More</code></div>
-    <div class="field"><span>Website URL</span><code>https://getoddsboss.com/</code><button data-copy="https://getoddsboss.com/">Copy</button></div>
     <div class="field"><span>URL parameters</span><code>utm_source=meta&amp;utm_medium=paid_social&amp;utm_campaign=ob_us_nov26_memes&amp;utm_content=ob_w3v2_leo_toast_300_more_than_the_boys</code><button data-copy="utm_source=meta&amp;utm_medium=paid_social&amp;utm_campaign=ob_us_nov26_memes&amp;utm_content=ob_w3v2_leo_toast_300_more_than_the_boys">Copy</button></div>
+  </div>
+</article>
+
+<div class="box"><h3>Step 4 · After launch</h3><ul style="list-style:none;padding-left:0">
+<li><span class="day">Days 1–3</span> No changes at all. Every edit restarts Meta's learning.</li>
+<li><span class="day">Day 3</span> Send the report below. Turn off an ad only if it spent <b>$36 with 0 checkout starts</b>, or <b>more than $40 at over $20 per checkout start</b>. Keep both Round 1 ads on until day 7. If the whole ad set has fewer than 10 checkout starts, don't change anything: send the report and wait for the owner.</li>
+<li><span class="day">Day 7</span> Send the report. With the owner's OK: turn off the 2 or 3 weakest ads by cost per checkout start, and add the same number from the reserve below, picking the photo that's winning. If cost per checkout start is $12 or less with 20+ checkout starts in the last 3 days, raise the budget by 20%.</li>
+<li><span class="day">Every 3 days</span> If that still holds, raise the budget by another 20%. If cost per checkout start stays over $20 for 3 days, lower it by 20%.</li>
+</ul></div>
+
+<div class="box"><h3>The report</h3><ul>
+<li>Level: <b>ad</b>. Columns: amount spent, impressions, CTR (link), landing page views, <b>initiates checkout</b>, <b>cost per initiate checkout</b>, <b>adds payment info</b>, leads.</li>
+<li>Export three times: <b>by day</b>, <b>by age</b> and <b>by placement</b>. Send the files (CSV or Excel), not screenshots.</li>
+</ul></div>
+
+<h2>Reserve: add on day 7</h2><p class="sub">Don't upload these at launch. Same text and settings as above.</p>
+<article class="ad">
+  <div class="imgs">
+    <figure><img src="ads/OB_L1v4_crying-jordan_sat-the-4th_4x5.png" alt="when my $10 at +15000 dies because he sat the whole 4th quarter, feed size" loading="lazy"><figcaption><a href="ads/OB_L1v4_crying-jordan_sat-the-4th_4x5.png" download>Download feed 4:5</a></figcaption></figure>
+    <figure class="tall"><img src="ads/OB_L1v4_crying-jordan_sat-the-4th_9x16.png" alt="when my $10 at +15000 dies because he sat the whole 4th quarter, stories size" loading="lazy"><figcaption><a href="ads/OB_L1v4_crying-jordan_sat-the-4th_9x16.png" download>Download stories 9:16</a></figcaption></figure>
+  </div>
+  <div class="meta">
+    <p class="num">Reserve 1 · when my $10 at +15000 dies because he sat the whole 4th quarter</p>
+    <p class="why">Third crying Jordan caption. Add if crying Jordan leads on day 7.</p>
+    <div class="field"><span>Ad name</span><code>OB_L1v4_crying-jordan_sat-the-4th</code><button data-copy="OB_L1v4_crying-jordan_sat-the-4th">Copy</button></div>
+    <div class="field"><span>URL parameters</span><code>utm_source=meta&amp;utm_medium=paid_social&amp;utm_campaign=ob_us_nov26_memes&amp;utm_content=ob_l1v4_crying_jordan_sat_the_4th</code><button data-copy="utm_source=meta&amp;utm_medium=paid_social&amp;utm_campaign=ob_us_nov26_memes&amp;utm_content=ob_l1v4_crying_jordan_sat_the_4th">Copy</button></div>
+  </div>
+</article>
+<article class="ad">
+  <div class="imgs">
+    <figure><img src="ads/OB_L3v3_jordan-peele_kicker-in-the-snow_4x5.png" alt="when i&#x27;m 5 for 5 and the last leg is a kicker in the snow, feed size" loading="lazy"><figcaption><a href="ads/OB_L3v3_jordan-peele_kicker-in-the-snow_4x5.png" download>Download feed 4:5</a></figcaption></figure>
+    <figure class="tall"><img src="ads/OB_L3v3_jordan-peele_kicker-in-the-snow_9x16.png" alt="when i&#x27;m 5 for 5 and the last leg is a kicker in the snow, stories size" loading="lazy"><figcaption><a href="ads/OB_L3v3_jordan-peele_kicker-in-the-snow_9x16.png" download>Download stories 9:16</a></figcaption></figure>
+  </div>
+  <div class="meta">
+    <p class="num">Reserve 2 · when i&#x27;m 5 for 5 and the last leg is a kicker in the snow</p>
+    <p class="why">Third Jordan Peele caption. Add if Jordan Peele leads on day 7.</p>
+    <div class="field"><span>Ad name</span><code>OB_L3v3_jordan-peele_kicker-in-the-snow</code><button data-copy="OB_L3v3_jordan-peele_kicker-in-the-snow">Copy</button></div>
+    <div class="field"><span>URL parameters</span><code>utm_source=meta&amp;utm_medium=paid_social&amp;utm_campaign=ob_us_nov26_memes&amp;utm_content=ob_l3v3_jordan_peele_kicker_in_the_snow</code><button data-copy="utm_source=meta&amp;utm_medium=paid_social&amp;utm_campaign=ob_us_nov26_memes&amp;utm_content=ob_l3v3_jordan_peele_kicker_in_the_snow">Copy</button></div>
   </div>
 </article>
 <article class="ad">
@@ -283,18 +208,9 @@ $2 at +60000 = $1,200. at another book it&#x27;s +48000 = $960. OddsBoss shows y
     <figure class="tall"><img src="ads/OB_W3v3_leo-toast_group-chat-wants-picks_9x16.png" alt="when the group chat finally asks who&#x27;s picking my parlays, stories size" loading="lazy"><figcaption><a href="ads/OB_W3v3_leo-toast_group-chat-wants-picks_9x16.png" download>Download stories 9:16</a></figcaption></figure>
   </div>
   <div class="meta">
-    <p class="num">Ad 11 · when the group chat finally asks who&#x27;s picking my parlays</p>
+    <p class="num">Reserve 3 · when the group chat finally asks who&#x27;s picking my parlays</p>
+    <p class="why">Second Leo caption. Add if Leo beats the controls.</p>
     <div class="field"><span>Ad name</span><code>OB_W3v3_leo-toast_group-chat-wants-picks</code><button data-copy="OB_W3v3_leo-toast_group-chat-wants-picks">Copy</button></div>
-    <div class="field block"><span>Primary text</span><pre>they laughed at the 6-leg. now they want the picks.
-OddsBoss builds every morning&#x27;s parlays from sharp money, pro bettors and Quant models.
-
-21+ only. Gambling problem? Call 1-800-GAMBLER.</pre><button data-copy="they laughed at the 6-leg. now they want the picks.
-OddsBoss builds every morning&#x27;s parlays from sharp money, pro bettors and Quant models.
-
-21+ only. Gambling problem? Call 1-800-GAMBLER.">Copy</button></div>
-    <div class="field"><span>Headline</span><code>Today&#x27;s parlays, ready to bet</code><button data-copy="Today&#x27;s parlays, ready to bet">Copy</button></div>
-    <div class="field"><span>Call to action</span><code>Learn More</code></div>
-    <div class="field"><span>Website URL</span><code>https://getoddsboss.com/</code><button data-copy="https://getoddsboss.com/">Copy</button></div>
     <div class="field"><span>URL parameters</span><code>utm_source=meta&amp;utm_medium=paid_social&amp;utm_campaign=ob_us_nov26_memes&amp;utm_content=ob_w3v3_leo_toast_group_chat_wants_picks</code><button data-copy="utm_source=meta&amp;utm_medium=paid_social&amp;utm_campaign=ob_us_nov26_memes&amp;utm_content=ob_w3v3_leo_toast_group_chat_wants_picks">Copy</button></div>
   </div>
 </article>
@@ -304,18 +220,9 @@ OddsBoss builds every morning&#x27;s parlays from sharp money, pro bettors and Q
     <figure class="tall"><img src="ads/OB_W1v2_mj-trophy_almost-didnt-place-it_9x16.png" alt="when the $10 at +12000 i almost didn&#x27;t place actually hits, stories size" loading="lazy"><figcaption><a href="ads/OB_W1v2_mj-trophy_almost-didnt-place-it_9x16.png" download>Download stories 9:16</a></figcaption></figure>
   </div>
   <div class="meta">
-    <p class="num">Ad 12 · when the $10 at +12000 i almost didn&#x27;t place actually hits</p>
+    <p class="num">Reserve 4 · when the $10 at +12000 i almost didn&#x27;t place actually hits</p>
+    <p class="why">MJ trophy win. Add if &quot;win&quot; ads hold up on cost per checkout start.</p>
     <div class="field"><span>Ad name</span><code>OB_W1v2_mj-trophy_almost-didnt-place-it</code><button data-copy="OB_W1v2_mj-trophy_almost-didnt-place-it">Copy</button></div>
-    <div class="field block"><span>Primary text</span><pre>$10 at +12000 = $1,200. almost didn&#x27;t place it.
-OddsBoss sends today&#x27;s parlays every morning, priced at every book.
-
-21+ only. Gambling problem? Call 1-800-GAMBLER.</pre><button data-copy="$10 at +12000 = $1,200. almost didn&#x27;t place it.
-OddsBoss sends today&#x27;s parlays every morning, priced at every book.
-
-21+ only. Gambling problem? Call 1-800-GAMBLER.">Copy</button></div>
-    <div class="field"><span>Headline</span><code>Get today&#x27;s picks</code><button data-copy="Get today&#x27;s picks">Copy</button></div>
-    <div class="field"><span>Call to action</span><code>Learn More</code></div>
-    <div class="field"><span>Website URL</span><code>https://getoddsboss.com/</code><button data-copy="https://getoddsboss.com/">Copy</button></div>
     <div class="field"><span>URL parameters</span><code>utm_source=meta&amp;utm_medium=paid_social&amp;utm_campaign=ob_us_nov26_memes&amp;utm_content=ob_w1v2_mj_trophy_almost_didnt_place_it</code><button data-copy="utm_source=meta&amp;utm_medium=paid_social&amp;utm_campaign=ob_us_nov26_memes&amp;utm_content=ob_w1v2_mj_trophy_almost_didnt_place_it">Copy</button></div>
   </div>
 </article>
@@ -325,27 +232,12 @@ OddsBoss sends today&#x27;s parlays every morning, priced at every book.
     <figure class="tall"><img src="ads/OB_W1v3_mj-trophy_best-book_9x16.png" alt="when the parlay hits and i placed it at the book that paid the most, stories size" loading="lazy"><figcaption><a href="ads/OB_W1v3_mj-trophy_best-book_9x16.png" download>Download stories 9:16</a></figcaption></figure>
   </div>
   <div class="meta">
-    <p class="num">Ad 13 · when the parlay hits and i placed it at the book that paid the most</p>
+    <p class="num">Reserve 5 · when the parlay hits and i placed it at the book that paid the most</p>
+    <p class="why">MJ trophy with the payout angle.</p>
     <div class="field"><span>Ad name</span><code>OB_W1v3_mj-trophy_best-book</code><button data-copy="OB_W1v3_mj-trophy_best-book">Copy</button></div>
-    <div class="field block"><span>Primary text</span><pre>it hit. and it paid the most it could.
-OddsBoss shows every book&#x27;s price for your parlay before you tap place.
-
-21+ only. Gambling problem? Call 1-800-GAMBLER.</pre><button data-copy="it hit. and it paid the most it could.
-OddsBoss shows every book&#x27;s price for your parlay before you tap place.
-
-21+ only. Gambling problem? Call 1-800-GAMBLER.">Copy</button></div>
-    <div class="field"><span>Headline</span><code>Same parlay. Bigger payout.</code><button data-copy="Same parlay. Bigger payout.">Copy</button></div>
-    <div class="field"><span>Call to action</span><code>Learn More</code></div>
-    <div class="field"><span>Website URL</span><code>https://getoddsboss.com/</code><button data-copy="https://getoddsboss.com/">Copy</button></div>
     <div class="field"><span>URL parameters</span><code>utm_source=meta&amp;utm_medium=paid_social&amp;utm_campaign=ob_us_nov26_memes&amp;utm_content=ob_w1v3_mj_trophy_best_book</code><button data-copy="utm_source=meta&amp;utm_medium=paid_social&amp;utm_campaign=ob_us_nov26_memes&amp;utm_content=ob_w1v3_mj_trophy_best_book">Copy</button></div>
   </div>
 </article>
-
-<div class="box"><h3>After launch</h3><ul>
-<li>Leave everything running for <b>3 days</b> without changes.</li>
-<li><b>Day 3:</b> turn off any ad that spent $36 with no checkout starts, or $40 at more than $20 per checkout start.</li>
-<li>Send the owner a report per ad with these columns: amount spent, impressions, CTR (link), landing page views, <b>initiates checkout</b>, <b>cost per initiate checkout</b>, <b>adds payment info</b>, leads. Use breakdown <b>by day</b>, and also send one breakdown by age and one by placement.</li>
-</ul></div>
 </div>
 <script>
 document.querySelectorAll('button[data-copy]').forEach(b=>b.addEventListener('click',async()=>{
